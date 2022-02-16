@@ -38,6 +38,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
+Plug 'github/copilot.vim'
 call plug#end()
 
 colorscheme gruvbox
