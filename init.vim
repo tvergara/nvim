@@ -57,3 +57,6 @@ nmap <C-f> :NERDTreeToggle<CR>
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+" set dr as a shortcut for using doppler
+:cnoreabbrev dr !doppler run --
+
