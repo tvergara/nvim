@@ -41,6 +41,7 @@ Plug 'tpope/vim-commentary'
 Plug 'github/copilot.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()
 
 colorscheme gruvbox
@@ -60,4 +61,7 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 
 " set dr as a shortcut for using doppler
 :cnoreabbrev dr !doppler run --
+
+" add ctrl p as a shortcut for using fzf
+nmap <C-p> :FZF<CR>
 
