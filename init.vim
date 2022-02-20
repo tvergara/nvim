@@ -40,6 +40,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'github/copilot.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 colorscheme gruvbox
