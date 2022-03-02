@@ -45,6 +45,7 @@ Plug 'github/copilot.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'mileszs/ack.vim'
 call plug#end()
 
 colorscheme gruvbox
@@ -78,4 +79,7 @@ endif
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> rn <Plug>(coc-rename)
+
+" set s as a shortcut for searching
+:cnoreabbrev s Ack
 
