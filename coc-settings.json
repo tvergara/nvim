@@ -1,5 +1,10 @@
 {
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "solargraph.diagnostics": true,
+  "solargraph.hover": true,
+  "solargraph.commandPath": "/Users/tomas/.rbenv/shims/solargraph"
 }
 
