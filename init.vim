@@ -85,3 +85,4 @@ nmap <silent> rn <Plug>(coc-rename)
 " set s as a shortcut for searching
 :cnoreabbrev s Ack
 
+autocmd InsertLeave * write
