@@ -48,6 +48,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-rails'
 call plug#end()
 
 colorscheme gruvbox
