@@ -87,3 +87,9 @@ nmap <silent> rn <Plug>(coc-rename)
 :cnoreabbrev s Ack
 
 autocmd InsertLeave * write
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
