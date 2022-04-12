@@ -63,6 +63,7 @@ let NERDTreeQuitOnOpen=1
 
 " NERDtree settings
 nmap <C-f> :NERDTreeToggle<CR>
+nmap <C-c> :NERDTreeFind<cr>
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
