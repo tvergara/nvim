@@ -47,6 +47,7 @@ Plug 'github/copilot.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-rails'
 call plug#end()
@@ -71,7 +72,7 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 :cnoreabbrev dr !doppler run --
 
 " add ctrl p as a shortcut for using fzf
-nmap <C-p> :FZF<CR>
+nmap <C-p> :GFiles --cached --others --exclude-standard<CR>
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
   let g:coc_global_extensions += ['coc-prettier']
