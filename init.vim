@@ -50,6 +50,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-rails'
+Plug 'skanehira/getpr.vim'
 call plug#end()
 
 colorscheme gruvbox
@@ -98,3 +99,9 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <C-w> <Cmd>nohlsearch<Bar>diffupdate<CR><C-L>
 set autowrite
+set autoread
+
+command W w
+command Q q
+cnoreabbrev g G
+cnoreabbrev git Git
