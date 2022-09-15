@@ -101,7 +101,9 @@ nnoremap <C-w> <Cmd>nohlsearch<Bar>diffupdate<CR><C-L>
 set autowrite
 set autoread
 
+# common typos
 command W w
 command Q q
 cnoreabbrev g G
 cnoreabbrev git Git
+command Wq wq
